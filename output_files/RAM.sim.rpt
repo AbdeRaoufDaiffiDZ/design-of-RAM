@@ -1,0 +1,519 @@
+Simulator report for RAM
+Mon Dec 02 13:24:44 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 285 nodes    ;
+; Simulation Coverage         ;      75.44 % ;
+; Total Number of Transitions ; 2646         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                              ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+; Option                                                                                     ; Setting                            ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                ;               ;
+; Vector input source                                                                        ; D:/VHDL/design of ram/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                 ; On            ;
+; Check outputs                                                                              ; Off                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                ; Off           ;
+; Detect glitches                                                                            ; Off                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                               ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.44 % ;
+; Total nodes checked                                 ; 285          ;
+; Total output ports checked                          ; 285          ;
+; Total output ports with complete 1/0-value coverage ; 215          ;
+; Total output ports with no 1/0-value coverage       ; 45           ;
+; Total output ports with no 1-value coverage         ; 45           ;
+; Total output ports with no 0-value coverage         ; 70           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                        ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |RAM|Data_out[0]~reg0                                          ; |RAM|Data_out[0]~reg0                                          ; regout           ;
+; |RAM|Data_out[7]~reg0                                          ; |RAM|Data_out[7]~reg0                                          ; regout           ;
+; |RAM|Data_out[6]~reg0                                          ; |RAM|Data_out[6]~reg0                                          ; regout           ;
+; |RAM|Data_out[5]~reg0                                          ; |RAM|Data_out[5]~reg0                                          ; regout           ;
+; |RAM|Data_out[4]~reg0                                          ; |RAM|Data_out[4]~reg0                                          ; regout           ;
+; |RAM|Data_out[3]~reg0                                          ; |RAM|Data_out[3]~reg0                                          ; regout           ;
+; |RAM|Data_out[2]~reg0                                          ; |RAM|Data_out[2]~reg0                                          ; regout           ;
+; |RAM|Data_out[1]~reg0                                          ; |RAM|Data_out[1]~reg0                                          ; regout           ;
+; |RAM|Data_out[0]~en                                            ; |RAM|Data_out[0]~en                                            ; regout           ;
+; |RAM|Data_out[0]~0                                             ; |RAM|Data_out[0]~0                                             ; out              ;
+; |RAM|Data_out[1]~en                                            ; |RAM|Data_out[1]~en                                            ; regout           ;
+; |RAM|Data_out[1]~1                                             ; |RAM|Data_out[1]~1                                             ; out              ;
+; |RAM|Data_out[2]~en                                            ; |RAM|Data_out[2]~en                                            ; regout           ;
+; |RAM|Data_out[2]~2                                             ; |RAM|Data_out[2]~2                                             ; out              ;
+; |RAM|Data_out[3]~en                                            ; |RAM|Data_out[3]~en                                            ; regout           ;
+; |RAM|Data_out[3]~3                                             ; |RAM|Data_out[3]~3                                             ; out              ;
+; |RAM|Data_out[4]~en                                            ; |RAM|Data_out[4]~en                                            ; regout           ;
+; |RAM|Data_out[4]~4                                             ; |RAM|Data_out[4]~4                                             ; out              ;
+; |RAM|Data_out[5]~en                                            ; |RAM|Data_out[5]~en                                            ; regout           ;
+; |RAM|Data_out[5]~5                                             ; |RAM|Data_out[5]~5                                             ; out              ;
+; |RAM|Data_out[6]~en                                            ; |RAM|Data_out[6]~en                                            ; regout           ;
+; |RAM|Data_out[6]~6                                             ; |RAM|Data_out[6]~6                                             ; out              ;
+; |RAM|Data_out[7]~en                                            ; |RAM|Data_out[7]~en                                            ; regout           ;
+; |RAM|Data_out[7]~7                                             ; |RAM|Data_out[7]~7                                             ; out              ;
+; |RAM|clk                                                       ; |RAM|clk                                                       ; out              ;
+; |RAM|rd                                                        ; |RAM|rd                                                        ; out              ;
+; |RAM|we                                                        ; |RAM|we                                                        ; out              ;
+; |RAM|addr[0]                                                   ; |RAM|addr[0]                                                   ; out              ;
+; |RAM|addr[1]                                                   ; |RAM|addr[1]                                                   ; out              ;
+; |RAM|Data_in[0]                                                ; |RAM|Data_in[0]                                                ; out              ;
+; |RAM|Data_in[1]                                                ; |RAM|Data_in[1]                                                ; out              ;
+; |RAM|Data_in[2]                                                ; |RAM|Data_in[2]                                                ; out              ;
+; |RAM|Data_in[3]                                                ; |RAM|Data_in[3]                                                ; out              ;
+; |RAM|Data_in[4]                                                ; |RAM|Data_in[4]                                                ; out              ;
+; |RAM|Data_in[5]                                                ; |RAM|Data_in[5]                                                ; out              ;
+; |RAM|Data_in[6]                                                ; |RAM|Data_in[6]                                                ; out              ;
+; |RAM|Data_in[7]                                                ; |RAM|Data_in[7]                                                ; out              ;
+; |RAM|Data_out[0]                                               ; |RAM|Data_out[0]                                               ; pin_out          ;
+; |RAM|Data_out[1]                                               ; |RAM|Data_out[1]                                               ; pin_out          ;
+; |RAM|Data_out[2]                                               ; |RAM|Data_out[2]                                               ; pin_out          ;
+; |RAM|Data_out[3]                                               ; |RAM|Data_out[3]                                               ; pin_out          ;
+; |RAM|Data_out[4]                                               ; |RAM|Data_out[4]                                               ; pin_out          ;
+; |RAM|Data_out[5]                                               ; |RAM|Data_out[5]                                               ; pin_out          ;
+; |RAM|Data_out[6]                                               ; |RAM|Data_out[6]                                               ; pin_out          ;
+; |RAM|Data_out[7]                                               ; |RAM|Data_out[7]                                               ; pin_out          ;
+; |RAM|rtl~0                                                     ; |RAM|rtl~0                                                     ; out0             ;
+; |RAM|rtl~1                                                     ; |RAM|rtl~1                                                     ; out0             ;
+; |RAM|rtl~2                                                     ; |RAM|rtl~2                                                     ; out0             ;
+; |RAM|rtl~3                                                     ; |RAM|rtl~3                                                     ; out0             ;
+; |RAM|ram~52                                                    ; |RAM|ram~52                                                    ; out              ;
+; |RAM|ram~56                                                    ; |RAM|ram~56                                                    ; out              ;
+; |RAM|ram~57                                                    ; |RAM|ram~57                                                    ; out              ;
+; |RAM|ram~60                                                    ; |RAM|ram~60                                                    ; out              ;
+; |RAM|ram~61                                                    ; |RAM|ram~61                                                    ; out              ;
+; |RAM|ram~64                                                    ; |RAM|ram~64                                                    ; out              ;
+; |RAM|ram~65                                                    ; |RAM|ram~65                                                    ; out              ;
+; |RAM|ram~66                                                    ; |RAM|ram~66                                                    ; out              ;
+; |RAM|ram~67                                                    ; |RAM|ram~67                                                    ; out              ;
+; |RAM|ram~68                                                    ; |RAM|ram~68                                                    ; out              ;
+; |RAM|ram~70                                                    ; |RAM|ram~70                                                    ; out              ;
+; |RAM|ram~71                                                    ; |RAM|ram~71                                                    ; out              ;
+; |RAM|ram~72                                                    ; |RAM|ram~72                                                    ; out              ;
+; |RAM|ram~73                                                    ; |RAM|ram~73                                                    ; out              ;
+; |RAM|ram~74                                                    ; |RAM|ram~74                                                    ; out              ;
+; |RAM|ram~75                                                    ; |RAM|ram~75                                                    ; out              ;
+; |RAM|ram~77                                                    ; |RAM|ram~77                                                    ; out              ;
+; |RAM|ram~82                                                    ; |RAM|ram~82                                                    ; out              ;
+; |RAM|ram~83                                                    ; |RAM|ram~83                                                    ; out0             ;
+; |RAM|ram~84                                                    ; |RAM|ram~84                                                    ; out0             ;
+; |RAM|ram~85                                                    ; |RAM|ram~85                                                    ; out0             ;
+; |RAM|ram~86                                                    ; |RAM|ram~86                                                    ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~1              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~1              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~3              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~3              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~5              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~5              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~6              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~6              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~7              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~7              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~8              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~8              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~9              ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~9              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~11             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~11             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~13             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~13             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~14             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~14             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~15             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~15             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~16             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~16             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~17             ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~17             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]   ; |RAM|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]   ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                           ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |RAM|ram~12                                                    ; |RAM|ram~12                                                    ; regout           ;
+; |RAM|ram~14                                                    ; |RAM|ram~14                                                    ; regout           ;
+; |RAM|ram~54                                                    ; |RAM|ram~54                                                    ; out              ;
+; |RAM|ram~15                                                    ; |RAM|ram~15                                                    ; regout           ;
+; |RAM|ram~55                                                    ; |RAM|ram~55                                                    ; out              ;
+; |RAM|ram~16                                                    ; |RAM|ram~16                                                    ; regout           ;
+; |RAM|ram~17                                                    ; |RAM|ram~17                                                    ; regout           ;
+; |RAM|ram~22                                                    ; |RAM|ram~22                                                    ; regout           ;
+; |RAM|ram~62                                                    ; |RAM|ram~62                                                    ; out              ;
+; |RAM|ram~23                                                    ; |RAM|ram~23                                                    ; regout           ;
+; |RAM|ram~63                                                    ; |RAM|ram~63                                                    ; out              ;
+; |RAM|ram~28                                                    ; |RAM|ram~28                                                    ; regout           ;
+; |RAM|ram~29                                                    ; |RAM|ram~29                                                    ; regout           ;
+; |RAM|ram~69                                                    ; |RAM|ram~69                                                    ; out              ;
+; |RAM|ram~30                                                    ; |RAM|ram~30                                                    ; regout           ;
+; |RAM|ram~31                                                    ; |RAM|ram~31                                                    ; regout           ;
+; |RAM|ram~32                                                    ; |RAM|ram~32                                                    ; regout           ;
+; |RAM|ram~33                                                    ; |RAM|ram~33                                                    ; regout           ;
+; |RAM|ram~34                                                    ; |RAM|ram~34                                                    ; regout           ;
+; |RAM|ram~35                                                    ; |RAM|ram~35                                                    ; regout           ;
+; |RAM|ram~37                                                    ; |RAM|ram~37                                                    ; regout           ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                           ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |RAM|ram~11                                                    ; |RAM|ram~11                                                    ; regout           ;
+; |RAM|ram~51                                                    ; |RAM|ram~51                                                    ; out              ;
+; |RAM|ram~12                                                    ; |RAM|ram~12                                                    ; regout           ;
+; |RAM|ram~13                                                    ; |RAM|ram~13                                                    ; regout           ;
+; |RAM|ram~53                                                    ; |RAM|ram~53                                                    ; out              ;
+; |RAM|ram~14                                                    ; |RAM|ram~14                                                    ; regout           ;
+; |RAM|ram~54                                                    ; |RAM|ram~54                                                    ; out              ;
+; |RAM|ram~15                                                    ; |RAM|ram~15                                                    ; regout           ;
+; |RAM|ram~55                                                    ; |RAM|ram~55                                                    ; out              ;
+; |RAM|ram~16                                                    ; |RAM|ram~16                                                    ; regout           ;
+; |RAM|ram~17                                                    ; |RAM|ram~17                                                    ; regout           ;
+; |RAM|ram~18                                                    ; |RAM|ram~18                                                    ; regout           ;
+; |RAM|ram~58                                                    ; |RAM|ram~58                                                    ; out              ;
+; |RAM|ram~19                                                    ; |RAM|ram~19                                                    ; regout           ;
+; |RAM|ram~59                                                    ; |RAM|ram~59                                                    ; out              ;
+; |RAM|ram~20                                                    ; |RAM|ram~20                                                    ; regout           ;
+; |RAM|ram~21                                                    ; |RAM|ram~21                                                    ; regout           ;
+; |RAM|ram~22                                                    ; |RAM|ram~22                                                    ; regout           ;
+; |RAM|ram~62                                                    ; |RAM|ram~62                                                    ; out              ;
+; |RAM|ram~23                                                    ; |RAM|ram~23                                                    ; regout           ;
+; |RAM|ram~63                                                    ; |RAM|ram~63                                                    ; out              ;
+; |RAM|ram~24                                                    ; |RAM|ram~24                                                    ; regout           ;
+; |RAM|ram~25                                                    ; |RAM|ram~25                                                    ; regout           ;
+; |RAM|ram~26                                                    ; |RAM|ram~26                                                    ; regout           ;
+; |RAM|ram~27                                                    ; |RAM|ram~27                                                    ; regout           ;
+; |RAM|ram~28                                                    ; |RAM|ram~28                                                    ; regout           ;
+; |RAM|ram~29                                                    ; |RAM|ram~29                                                    ; regout           ;
+; |RAM|ram~69                                                    ; |RAM|ram~69                                                    ; out              ;
+; |RAM|ram~30                                                    ; |RAM|ram~30                                                    ; regout           ;
+; |RAM|ram~31                                                    ; |RAM|ram~31                                                    ; regout           ;
+; |RAM|ram~32                                                    ; |RAM|ram~32                                                    ; regout           ;
+; |RAM|ram~33                                                    ; |RAM|ram~33                                                    ; regout           ;
+; |RAM|ram~34                                                    ; |RAM|ram~34                                                    ; regout           ;
+; |RAM|ram~35                                                    ; |RAM|ram~35                                                    ; regout           ;
+; |RAM|ram~36                                                    ; |RAM|ram~36                                                    ; regout           ;
+; |RAM|ram~76                                                    ; |RAM|ram~76                                                    ; out              ;
+; |RAM|ram~37                                                    ; |RAM|ram~37                                                    ; regout           ;
+; |RAM|ram~38                                                    ; |RAM|ram~38                                                    ; regout           ;
+; |RAM|ram~78                                                    ; |RAM|ram~78                                                    ; out              ;
+; |RAM|ram~39                                                    ; |RAM|ram~39                                                    ; regout           ;
+; |RAM|ram~79                                                    ; |RAM|ram~79                                                    ; out              ;
+; |RAM|ram~40                                                    ; |RAM|ram~40                                                    ; regout           ;
+; |RAM|ram~80                                                    ; |RAM|ram~80                                                    ; out              ;
+; |RAM|ram~41                                                    ; |RAM|ram~41                                                    ; regout           ;
+; |RAM|ram~81                                                    ; |RAM|ram~81                                                    ; out              ;
+; |RAM|ram~42                                                    ; |RAM|ram~42                                                    ; regout           ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; out0             ;
+; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; |RAM|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 02 13:24:43 2024
+Info: Command: quartus_sim --simulation_results_format=VWF RAM -c RAM
+Info (324025): Using vector source file "D:/VHDL/design of ram/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~11"
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~13"
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~18"
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~35"
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~37"
+Warning (324036): Found clock-sensitive change during active clock edge at time 200.0 ns on register "|RAM|ram~42"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~12"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~16"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~17"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~19"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~20"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~21"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~24"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~25"
+Warning (324036): Found clock-sensitive change during active clock edge at time 250.0 ns on register "|RAM|ram~26"
+Warning (324036): Found clock-sensitive change during active clock edge at time 300.0 ns on register "|RAM|ram~27"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~28"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~30"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~31"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~32"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~33"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~34"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~36"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~38"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~39"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~40"
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|RAM|ram~41"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      75.44 %
+Info (328052): Number of transitions in simulation is 2646
+Info (324045): Vector file RAM.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4442 megabytes
+    Info: Processing ended: Mon Dec 02 13:24:44 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
